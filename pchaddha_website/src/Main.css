@@ -1,0 +1,107 @@
+/* Styling for Main Component (Creates two columns and adjusts width of columns based on display */
+.main-navbar { 
+  background-color: #282c34;
+  float: left;
+  width: 20%;
+  color: white; 
+  min-height: 100vh;
+  text-align: center;
+}
+.main-component{
+  float: right;
+  width: 80%;
+}
+@media screen and (max-width: 480px) {
+  .main-navbar {
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;  
+  }
+  .main-component {
+    width: 100%;  
+  }
+}
+
+/* Navbar Styling */
+
+.navbar-image {
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: auto;
+  margin-right: auto; 
+  height: 15vh;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.main-navbar-anchors ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.main-navbar-anchors li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main-navbar-anchors form{
+  border-radius: 10px;
+}
+.main-navbar-anchors input{
+  min-width: 75%;
+  padding: 10px 10px 10px 10px;
+  background: lightblue; 
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 1.0em;
+}
+.main-navbar-anchors input:hover{
+  background: #61dafb;
+}
+
+/* Styling for the HOME component */
+.main-home {
+  background: lightblue;
+}
+.main-home h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.main-home body{
+  background-size: 100%;
+  min-height: 87.75vh;
+}
+.main-home header{
+  width: 100%;
+  background-color: #282c34;
+  width: inherit;
+  text-align: center;
+  min-height: 10vh;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-logo {
+  height: 10vh;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  pointer-events: none;
+  float: left;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
