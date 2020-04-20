@@ -46,12 +46,14 @@
   border-radius: 10px;
 }
 .main-navbar-anchors input{
-  min-width: 75%;
+  min-width: 85%;
+  max-width: 85%;
   padding: 10px 10px 10px 10px;
   background: lightblue; 
   border-radius: 10px;
   border: 2px solid black;
   font-size: 1.0em;
+  overflow-y: wrap;
 }
 .main-navbar-anchors input:hover{
   background: #61dafb;
@@ -60,6 +62,7 @@
 /* Styling for the HOME component */
 .main-home {
   background-color: whitesmoke;
+  height: 100vh;
 }
 .main-home h1{
   margin-top: 0px;
@@ -67,16 +70,18 @@
 }
 .main-home body{
   background-size: 100%;
-  min-height: 87.75vh;
-
 }
 .main-home header{
   width: 100%;
   width: inherit;
   text-align: center;
-  min-height: 10vh;
+  /* min-height: 10vh; */
   flex-direction: column;
   font-size: calc(10px + 2vmin);
+}
+.main-home h1{
+  padding-top: 30vh;
+  font-size: 2em;
 }
 
 /* Styling for the Resume component */

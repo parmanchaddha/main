@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import logo from './logo.svg';
 import {Route, NavLink, HashRouter, useHistory} from "react-router-dom";
-import { usePdf } from '@mikecousins/react-pdf';
+import Resume from "./Resume";
+import Poems from "./Poems";
 import './Main.css';
 
 function  Home () {
@@ -15,39 +16,9 @@ function  Home () {
       </header>
       <body>
         <div>
-          <p> Welcome to Parmandeep Chaddha's Website </p>
+          {/* <p> Welcome to Parmandeep Chaddha's Website </p> */}
         </div>
       </body>
-    </div>
-    </>
-  )
-}
-
-const RenderPDF = () => {
-  const [page, setPage] = useState(1);
-  const canvasRef = useRef(null);
- 
-  const { pdfDocument, pdfPage } = usePdf({
-    file: 'resume.pdf',
-    page,
-    canvasRef,
-    scale:0.96, 
-  });
- 
-  return (
-    <div>
-      {!pdfDocument ?
-         <h3>Performing a very complex render ... </h3> : 
-      <canvas ref={canvasRef} />}
-    </div>
-  );
-};
-
-function Resume () {
-  return (
-    <>
-    <div style = {{width:600}}>
-      <RenderPDF/>
     </div>
     </>
   )
@@ -70,8 +41,8 @@ function MainPage () {
 
         <div className = "main-navbar-anchors">          
           <ul> 
-            <li onClick = {() => setActivePage("Home")}
-                className = {active_page === "Home" ? "navbar-active" : "navbar-inactive"}>
+            <li onClick = {() => setActivePage("home")}
+                className = {active_page === "home" ? "navbar-active" : "navbar-inactive"}>
               <NavLink exact to="/">
                 <form> 
                   <input
@@ -80,13 +51,43 @@ function MainPage () {
                 </form>
               </NavLink>
             </li>
-            <li onClick = {() => setActivePage("Resume")}
-              className = {active_page === "Resume" ? "navbar-active" : "navbar-inactive"}>
+            <li onClick = {() => setActivePage("resume")}
+              className = {active_page === "resume" ? "navbar-active" : "navbar-inactive"}>
               <NavLink to="/resume">
               <form> 
                   <input
                     type = "submit"
                     value = "Resume" />
+                </form>
+              </NavLink>
+            </li>
+            <li onClick = {() => setActivePage("poems")}
+              className = {active_page === "poems" ? "navbar-active" : "navbar-inactive"}>
+              <NavLink to="/poems">
+              <form> 
+                  <input
+                    type = "submit"
+                    value = "Selected Poems" />
+                </form>
+              </NavLink>
+            </li>
+            <li onClick = {() => setActivePage("podcast")}
+              className = {active_page === "Podcast" ? "navbar-active" : "navbar-inactive"}>
+              <NavLink to="/podcast">
+              <form> 
+                  <input
+                    type = "submit"
+                    value = "Class In Session Podcast" />
+                </form>
+              </NavLink>
+            </li>
+            <li onClick = {() => setActivePage("projects")}
+              className = {active_page === "projects" ? "navbar-active" : "navbar-inactive"}>
+              <NavLink to="/projects">
+              <form> 
+                  <input
+                    type = "submit"
+                    value = "Projects" />
                 </form>
               </NavLink>
             </li>
@@ -96,6 +97,7 @@ function MainPage () {
       <div className = "main-component">
         <Route exact path  = "/" component = {Home}/>
         <Route path = "/resume" component = {Resume}/> 
+        <Route path = "/poems" component = {Poems}/> 
       </div>
     </HashRouter>
     </>
