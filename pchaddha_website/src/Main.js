@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState, useRef } from 'react';
 import logo from './logo.svg';
 import {Route, NavLink, HashRouter, useHistory} from "react-router-dom";
+import { usePdf } from '@mikecousins/react-pdf';
 import './Main.css';
 
 function  Home () {
@@ -22,9 +23,33 @@ function  Home () {
   )
 }
 
+const RenderPDF = () => {
+  const [page, setPage] = useState(1);
+  const canvasRef = useRef(null);
+ 
+  const { pdfDocument, pdfPage } = usePdf({
+    file: 'resume.pdf',
+    page,
+    canvasRef,
+    scale:0.96, 
+  });
+ 
+  return (
+    <div>
+      {!pdfDocument ?
+         <h3>Performing a very complex render ... </h3> : 
+      <canvas ref={canvasRef} />}
+    </div>
+  );
+};
+
 function Resume () {
   return (
-    <h3> This is where the resume goes, yay! </h3>
+    <>
+    <div style = {{width:600}}>
+      <RenderPDF/>
+    </div>
+    </>
   )
 }
 
@@ -87,4 +112,5 @@ function Main () {
   )
 }
 
+ 
 export default Main;

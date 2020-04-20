@@ -59,7 +59,7 @@
 
 /* Styling for the HOME component */
 .main-home {
-  background: lightblue;
+  background-color: whitesmoke;
 }
 .main-home h1{
   margin-top: 0px;
@@ -68,18 +68,27 @@
 .main-home body{
   background-size: 100%;
   min-height: 87.75vh;
+
 }
 .main-home header{
   width: 100%;
-  background-color: #282c34;
   width: inherit;
   text-align: center;
   min-height: 10vh;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+/* Styling for the Resume component */
+.resume {
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: auto;
+  margin-right: auto; 
+  height: 90vh;
+  pointer-events: none;
+}
 
 .App-logo {
   height: 10vh;
