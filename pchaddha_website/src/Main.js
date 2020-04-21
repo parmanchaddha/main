@@ -8,17 +8,24 @@ import './Main.css';
 function  Home () {
   return (
     <>
-    <div className = "main-home"> 
-      <header className="main-home">
-        <h1>
-          Parmandeep Chaddha
-        </h1>
-      </header>
-      <body>
-        <div>
-          {/* <p> Welcome to Parmandeep Chaddha's Website </p> */}
+    <div className = "main-home">
+        <div className="main-title">
+          <h1> Parmandeep Chaddha </h1>
         </div>
-      </body>
+        <div className = "main-body">
+          <div className = "main-contact-info">
+            <table>
+              <tr>
+                <td> <img src = "email_icon.png" alt = "email-logo"/> </td>
+                <td> <p> parmandeepchaddha@gmail.com </p></td>
+              </tr>
+              <tr>
+                <td> <img src = "phone_icon.png" alt = "phone-logo"/> </td>
+                <td> <p>  1-204-588-8303 </p></td>
+              </tr>
+            </table>
+          </div>
+        </div>  
     </div>
     </>
   )
