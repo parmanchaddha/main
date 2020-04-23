@@ -15,13 +15,33 @@ function  Home () {
         <div className = "main-body">
           <div className = "main-contact-info">
             <table>
-              <tr>
-                <td> <img src = "email_icon.png" alt = "email-logo"/> </td>
-                <td> <p> parmandeepchaddha@gmail.com </p></td>
+              <tr className = "main-contact-info-content">
+                <td className = "main-contact-info-left-cell">
+                  <img src = "email_icon.png" alt = "email-logo"/> 
+                </td>
+                <td className = "main-contact-info-right-cell"> 
+                  <p> parmandeepchaddha@gmail.com </p>
+                </td>
               </tr>
-              <tr>
-                <td> <img src = "phone_icon.png" alt = "phone-logo"/> </td>
-                <td> <p>  1-204-588-8303 </p></td>
+              <tr className = "main-contact-info-spacer"><td></td></tr>
+              <tr className = "main-contact-info-content">
+                <td  className="main-contact-info-left-cell">
+                 <img src = "phone_icon.png" alt = "phone-logo"/>
+                </td>
+                <td className= "main-contact-info-right-cell">
+                  <p>  1-204-588-8303 </p>
+                </td>
+              </tr>
+              <tr className = "main-contact-info-spacer"><td></td></tr>
+              <tr className = "main-contact-info-content">
+                <td  className="main-contact-info-left-cell">
+                 <img src = "linkedin-logo.png" alt = "phone-logo"/>
+                </td>
+                <td 
+                  className= "main-contact-info-right-cell"
+                  onClick = {(event) => console.log("www.linkedin.com/in/parman-chaddha")}>
+                  <p>  www.linkedin.com/in/parman-chaddha </p>
+                </td>
               </tr>
             </table>
           </div>

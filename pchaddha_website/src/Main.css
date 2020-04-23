@@ -21,7 +21,6 @@
     width: 100%;  
   }
 }
-
 /* Navbar Styling */
 
 .navbar-image {
@@ -58,7 +57,6 @@
 .main-navbar-anchors input:hover{
   background: #61dafb;
 }
-
 /* Styling for the HOME component */
 .main-home {
   background-color: whitesmoke;
@@ -73,12 +71,11 @@
   padding-top: 25vh;
   font-size: 4em;
 }
-.main-contact-info table{
+.main-contact-info {
+  width: 20em;
   margin-left: auto;
   margin-right: auto;
-}
-.main-contact-info td{
-  /* float: left; */
+  padding: 3px 3px 3px 3px
 }
 .main-contact-info img{
   display: block;
@@ -86,6 +83,14 @@
   margin-right: 0px;
   height: 2em;
 }
+.main-contact-info table { border-spacing: 0px; border-collapse: separate; }
+.main-contact-info-content {background-color: #282c34; color: whitesmoke;}
+.main-contact-info-spacer td{  padding-top: 5px}
+.main-contact-info-left-cell { border: solid 1.0px #000; border-right: 0px; }
+.main-contact-info-right-cell { border: solid 1.0px #000; border-left: 0px; }
+.main-contact-info td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+.main-contact-info td:last-child { border-top-right-radius: 10px;  border-bottom-right-radius: 10px;}
+
 /* Styling for the Resume component */
 .resume {
   display: block;
