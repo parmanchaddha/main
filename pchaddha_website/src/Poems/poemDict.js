@@ -2,7 +2,7 @@
 const busTitle = "The Bus";
 const menOfClothTitle = "The Men of the Cloth";
 const americaTheGreatTitle = "America The Great";
-const EPTitle = "E.- Do I Know You?";
+const EPTitle = "Do I Know You?";
 
 
 
@@ -106,31 +106,20 @@ Through the beaches of California, the sands of Nevada, the hills of Colarado, t
 Ready to wipe off the petina from Golden America, and make her beauty once again visible for all to see.`
 
 const EPPoem = `A woman made perfect by perception.
-Her quietness was resolution. 
+Her quietness is resolution. 
 Her hesitation, thought.
-Her blue eyes were a summer breeze 
+Her blue eyes are a summer breeze 
 Reminiscent of a care-free childhood. 
 
-She was always surrounded by friends,
+She is always surrounded by friends,
 Shields guarding her innocence, 
 From the cruelty of the world. 
 
-We are good friends, E. and I. 
-We sat drinking coffee one cold midsummer morning.
-We talked. 
-We laughed. 
-We discussed magic. 
-We discussed mundane.
+One day, she tells me a secret. 
 
-Then, she asked for a promise of secrecy and a commitment to support.
-“I kissed ____ last night”
-“Does ____ know?”
-“Yeah, I told him this morning. We talked and he wants time to think”. 
+---
 
-Your beautiful eyes become slightly colder. 
-It was the smallest fact and the smallest change in perception. 
-
-But it became the day on which perfection died. 
+It became a day on which perfection died. 
 Not heroically flamed out in the battlefield protecting family, friends, and Love. 
 But by a mistake encouraged by impulse, and made potent by a bottle of Crown.
 
