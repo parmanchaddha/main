@@ -1,8 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import logo from './logo.svg';
 import {Route, NavLink, HashRouter, useHistory} from "react-router-dom";
 import Resume from "./Resume";
 import Poems from "./Poems";
+import Podcast from "./Podcast";
 import './Main.css';
 
 function  Home () {
@@ -15,34 +16,38 @@ function  Home () {
         <div className = "main-body">
           <div className = "main-contact-info">
             <table>
-              <tr className = "main-contact-info-content">
-                <td className = "main-contact-info-left-cell">
-                  <img src = "email_icon.png" alt = "email-logo"/> 
-                </td>
-                <td className = "main-contact-info-right-cell"> 
-                  <p> parmandeepchaddha@gmail.com </p>
-                </td>
-              </tr>
-              <tr className = "main-contact-info-spacer"><td></td></tr>
-              <tr className = "main-contact-info-content">
-                <td  className="main-contact-info-left-cell">
-                 <img src = "phone_icon.png" alt = "phone-logo"/>
-                </td>
-                <td className= "main-contact-info-right-cell">
-                  <p>  1-204-588-8303 </p>
-                </td>
-              </tr>
-              <tr className = "main-contact-info-spacer"><td></td></tr>
-              <tr className = "main-contact-info-content">
-                <td  className="main-contact-info-left-cell">
-                 <img src = "linkedin-logo.png" alt = "phone-logo"/>
-                </td>
-                <td 
-                  className= "main-contact-info-right-cell"
-                  onClick = {(event) => console.log("www.linkedin.com/in/parman-chaddha")}>
-                  <p>  www.linkedin.com/in/parman-chaddha </p>
-                </td>
-              </tr>
+              <tbody>
+                <tr className = "main-contact-info-content">
+                  <td className = "main-contact-info-left-cell">
+                    <img src = "email_icon.png" alt = "email-logo"/> 
+                  </td>
+                  <td className = "main-contact-info-right-cell"> 
+                    <p> parmandeepchaddha@gmail.com </p>
+                  </td>
+                </tr>
+                <tr className = "main-contact-info-spacer"><td></td></tr>
+                <tr className = "main-contact-info-content">
+                  <td  className="main-contact-info-left-cell">
+                  <img src = "phone_icon.png" alt = "phone-logo"/>
+                  </td>
+                  <td className= "main-contact-info-right-cell">
+                    <p>  1-204-588-8303 </p>
+                  </td>
+                </tr>
+                <tr className = "main-contact-info-spacer"><td></td></tr>
+                <tr className = "main-contact-info-content">
+                  <td  className="main-contact-info-left-cell">
+                  <img src = "linkedin-logo.png" alt = "phone-logo"/>
+                  </td>
+                  <td className= "main-contact-info-right-cell" >
+                    <p> 
+                      <a href="https://www.linkedin.com/in/parman-chaddha">
+                        www.linkedin.com/in/parman-chaddha
+                      </a> 
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>  
@@ -53,6 +58,10 @@ function  Home () {
 
 function MainPage () {
   const [active_page, setActivePage] = useState("Home")
+
+  useEffect( () => {
+    document.title = "Parm's Web App";
+  }, [])
   return (
     <>
     <HashRouter>
@@ -125,6 +134,7 @@ function MainPage () {
         <Route exact path  = "/" component = {Home}/>
         <Route path = "/resume" component = {Resume}/> 
         <Route path = "/poems" component = {Poems}/> 
+        <Route path = "/podcast" component = {Podcast}/> 
       </div>
     </HashRouter>
     </>
