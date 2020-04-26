@@ -147,7 +147,37 @@
   color: lightblue;
   text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
-
+.podcast-body {
+  border: none;
+  text-align: center;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+.animated-paragraph .first{
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+.animated-paragraph .second{
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 0.33333s;
+}
+.animated-paragraph .third{
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 0.66666s;
+}
+@keyframes example {
+  0%   {background-color: #282c34; opacity: 0% }
+  25%  {background-color: #282c34; opacity: 50%}
+  50%  {background-color: #282c34; opacity: 100%}
+  75%  {background-color: #282c34; opacity: 50%}
+  100% {background-color: #282c34; opacity: 0%}
+}
 /* Styling elements for phone screens */
 
 @media (prefers-reduced-motion: no-preference) {
