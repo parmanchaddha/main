@@ -18,12 +18,13 @@ export default function Poems () {
             return (
                 <div className = "poems-options-dividers">
                     <form >
-                        <input
-                            className = {whichPoem === keyValue ? "poems-options-dividers-active" : "poems-options-dividers-inactive"}
-                            type = "submit"
-                            value = {poemDict[keyValue]["title"]}
-                            onClick = {(event) => renderPoemOnClick(keyValue)}
-                        />
+                        <div className = {whichPoem === keyValue ? "poems-options-dividers-active" : "poems-options-dividers-inactive"}>
+                            <input
+                                type = "submit"
+                                value = {poemDict[keyValue]["title"]}
+                                onClick = {(event) => renderPoemOnClick(keyValue)}
+                            />
+                        </div>
                     </form>
                 </div>
             )
