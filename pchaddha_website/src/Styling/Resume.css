@@ -1,0 +1,46 @@
+.resume-show {
+    height: 100vh;
+}
+.resume-not-show {
+    display: none;
+}
+/* Brew Coffee Animation */
+.resume-brew-coffee {
+    height: 100%;
+    width: 80vw;
+}
+.resume-brew-coffee-title{
+    padding-top: 15vh;
+}
+.resume-brew-coffee-title div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    background-color: rgb(78, 39, 11);
+    color: whitesmoke;
+}
+.resume-brew-coffee h2{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.resume-brew-coffee img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* PDF Display */
+.resume-pdf canvas{
+    max-height: 100vh;
+    margin-left: 10vw;
+    width: 60vw;
+    margin-right: 10vw;
+}
