@@ -102,7 +102,13 @@
 .main-contact-info a:hover{
   color: black;
 }
-/* Styling for the Resume component */
+
+.main-sarcastic-comment p{
+  position: fixed;
+  top: 90vh;
+  left: 55vw;
+}
+/* Main Styling for the Resume component */
 .resume {
   display: block;
   margin-top: 0.67em;
@@ -112,16 +118,6 @@
   height: 90vh;
   pointer-events: none;
 }
-
-.App-logo {
-  height: 10vh;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  pointer-events: none;
-  float: left;
-}
-
-
 /* Styling for the podcast component */
 .podcast {
   background-color: #282c34;
