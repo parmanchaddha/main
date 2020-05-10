@@ -14,6 +14,7 @@ function  Home () {
           <h1> Parmandeep Chaddha </h1>
         </div>
         <div className = "main-body">
+          
           <div className = "main-contact-info">
             <table>
               <tbody>
@@ -49,6 +50,9 @@ function  Home () {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div className = "main-sarcastic-comment">
+            <p> *Built using React </p>
           </div>
         </div>  
     </div>

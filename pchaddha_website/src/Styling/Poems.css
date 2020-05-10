@@ -40,31 +40,19 @@
     padding: 10px 10px 10px 10px;
     display: inline-block;
     outline: none;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
     font-size: 1.0em; 
 }
 .poems-options-dividers input:hover{
     text-decoration: underline;    
 }
-.poems-options-dividers-active {
-    animation-name: dividers;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-delay: None;
+.poems-options-dividers-active input{
+    background-color: #61dafb;
 }
-
-@keyframes dividers {
-  0%   {background-color: whitesmoke}
-  25%  {background-color: rgb(248, 230, 232)}
-  50%  {background-color: rgb(250, 215, 219)}
-  75%  {background-color: rgb(253, 200, 206)}
-  100%  {background-color: lightpink}
-  
-}
-/* Styling elements for phone screens */
-
-
-.poems-options-dividers-inactive {
+.poems-options-dividers-inactive input{
     background-color: whitesmoke;    
 }
 .poems-title {
