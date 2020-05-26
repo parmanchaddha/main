@@ -6,8 +6,8 @@
     text-align: center;
     margin-top: 0em;
     margin-bottom: 0em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
     font-size: 3em;
     font-weight: 700; 
     color: #282c34;
@@ -20,40 +20,48 @@
     white-space: pre-wrap;
 }
 .poems-options{
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 5px;
+    background-color: #282c34;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.poems-options-container {
+    width: 100%;
 }
 .poems-options-dividers {
     display: inline-block;
-    width: 25%
+    width: 20%
 }
 .poems-options form{
     display: inline-block;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    outline: none;
+    border: none;
 }
-.poems-options input{
-    min-width: 100%;
-    padding: 10px 10px 10px 10px;
+.poems-options input[type="submit"]{
+    width: 100%;
+    padding: 5px 5px 5px 5px;
     display: inline-block;
     outline: none;
-    border: 1px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
-    font-size: 1.0em; 
+    border: none;
+    font-size: small; 
+    background-color: #282c34;
+    color: whitesmoke;
 }
 .poems-options-dividers input:hover{
     text-decoration: underline;    
 }
 .poems-options-dividers-active input{
-    background-color: #61dafb;
+    font-weight: 600;
+    text-decoration: underline;
 }
-.poems-options-dividers-inactive input{
-    background-color: whitesmoke;    
+.poems-options-dividers-inactive input:hover{
+    font-weight: 600;
+    text-decoration: none;
 }
 .poems-title {
     margin-left: auto;
