@@ -22,7 +22,7 @@ export default function Poems () {
                             <input
                                 type = "submit"
                                 value = {poemDict[keyValue]["title"]}
-                                onClick = {(event) => renderPoemOnClick(keyValue)}
+                                onClick = {(event) => {event.preventDefault(); renderPoemOnClick(keyValue)}}
                             />
                         </div>
                     </form>
@@ -36,7 +36,9 @@ export default function Poems () {
             <h1 className = "poems-h1"> Poems </h1>
 
             <div className = "poems-options">
-                {poem_options}
+                <div className = "poems-options-container">
+                    {poem_options}
+                </div>
             </div>
 
             <div className = "poems-complete">
