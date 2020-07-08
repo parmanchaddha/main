@@ -1,2 +1,2 @@
 # main
-some more shit possibly
+The main repo for all my personal (no colaboration projects)
